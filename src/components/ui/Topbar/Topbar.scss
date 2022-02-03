@@ -1,0 +1,25 @@
+@import '../../../assets/scss/colors.scss';
+@import '../../../assets/scss/fonts.scss';
+.topbar {
+    background-color: #fafafa;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .08);
+    padding-block: 16px;
+    padding-inline: 20px;
+}
+
+.topbar .page-title .title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: $daybreak;
+}
+
+.topbar .page-subtitle .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .45);
+}
+
+.topbar .page-controls .page-controls-img {
+    cursor: pointer;
+}

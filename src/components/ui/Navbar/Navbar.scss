@@ -1,0 +1,42 @@
+@import '../../../assets/scss/colors.scss';
+@import '../../../assets/scss/fonts.scss';
+.navbar {
+    background-color: #fafafa;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .08);
+    padding-block: 10px;
+    padding-inline: 20px;
+    height: auto;
+    z-index: 10000;
+}
+
+.navbar .logo-text {
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $daybreak;
+    margin-left: 10px;
+}
+
+.navbar .user-wrapper .user-name {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .45);
+}
+
+.navbar .user-wrapper .user-img-wrapper {
+    max-width: 40px;
+    min-width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: $gray;
+    margin-left: 10px;
+}
+
+.navbar .user-wrapper .user-img-wrapper img {
+    width: 100%;
+    aspect-ratio: 1;
+}

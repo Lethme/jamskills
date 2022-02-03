@@ -1,0 +1,97 @@
+@import '/src/assets/scss/colors.scss';
+@import '/src/assets/scss/fonts.scss';
+.controls {
+    position: relative;
+    background-color: $daybreak;
+    min-width: 650px;
+    max-width: 650px;
+    transition: left .4s ease, box-shadow .4s ease;
+}
+
+@media (max-width: 1600px) {
+    .controls {
+        z-index: 9999;
+        position: fixed;
+        height: 100vh;
+        left: -100%;
+        &.show {
+            position: fixed;
+            left: 0%;
+            box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .controls {
+        max-width: unset;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.controls .controls-wrapper>* {
+    margin-block: 26px;
+}
+
+.controls .controls-img {
+    width: 80px;
+    aspect-ratio: 1;
+}
+
+.controls-toggler {
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    aspect-ratio: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+}
+
+@media (max-width: 576px) {
+    .controls-toggler {
+        left: 1em;
+        top: 1em;
+    }
+}
+
+.controls-toggler {
+    z-index: 10000;
+}
+
+.controls-toggler.show::before {
+    color: white;
+    opacity: .6;
+}
+
+.controls-toggler.show:hover::before,
+.controls-toggler.show:active::before {
+    color: white;
+    opacity: 1;
+}
+
+.controls-toggler::before {
+    content: '\f0c9';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 32px;
+    color: $darkgray;
+    transition: all .1s linear;
+}
+
+.controls-toggler:hover::before,
+.controls-toggler:active::before {
+    color: $daybreak;
+}
+
+@media (min-width: 1600px) {
+    .controls-toggler {
+        display: none;
+    }
+}

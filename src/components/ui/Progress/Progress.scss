@@ -1,0 +1,40 @@
+@import '../../../assets/scss/colors.scss';
+@import '../../../assets/scss/fonts.scss';
+.progress-container {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-track {
+    width: 100%;
+    background-color: $neutral3;
+}
+
+.progress-wrapper,
+.progress-track {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-wrapper,
+.progress-bar {
+    height: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: red;
+}
+
+.progress-label {
+    margin-left: 15px;
+    font-family: $roboto;
+    font-size: 1.2em;
+    font-weight: 400;
+}

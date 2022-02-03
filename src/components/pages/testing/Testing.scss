@@ -1,0 +1,95 @@
+@import '../../../assets/scss/colors.scss';
+@import '../../../assets/scss/fonts.scss';
+.testing {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.testing .page {
+    height: 100%;
+}
+
+.testing .page .side-wrapper,
+.testing .page .main-wrapper {
+    height: 100%;
+}
+
+.testing .page .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: $neutral3;
+}
+
+.testing .page .main-wrapper .main-content {
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+}
+
+.testing .page .main-wrapper .main-content .container {
+    padding-inline: 30px;
+    height: 100%;
+}
+
+.testing .stats {
+    margin-left: 40px;
+}
+
+.testing .page .side-wrapper {
+    z-index: 9999;
+}
+
+.testing .page .main-wrapper {
+    width: 100%;
+}
+
+.testing .input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.testing .input-group .search-input {
+    min-width: 320px;
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .25);
+    border: 1px solid #d9d9d9;
+    border-radius: 2px 0 0 2px;
+    padding-inline: 10px;
+}
+
+@media (max-width: 768px) {
+    .testing .input-group .search-input {
+        min-width: 0;
+        flex-grow: 1;
+    }
+    .testing .input-group {
+        width: 100%;
+    }
+}
+
+.testing .input-group .search-input:focus {
+    border: 1px solid #d9d9d9;
+    outline: none;
+}
+
+.testing .input-group .search-btn {
+    height: fit-content;
+    padding: .1em .5em;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    border-radius: 0 2px 2px 0;
+}
+
+.testing .input-group .search-btn::before {
+    content: '\f002';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: rgba(0, 0, 0, .45);
+}

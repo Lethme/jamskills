@@ -1,0 +1,52 @@
+@import '/src/assets/scss/colors.scss';
+@import '/src/assets/scss/fonts.scss';
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $neutral3;
+    padding: 1em 1em;
+    border-radius: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    input {
+        display: block;
+        color: rgba(0, 0, 0, .45);
+        font-family: $roboto;
+        font-size: 18px;
+        width: 100%;
+        line-height: 26px;
+        font-weight: 400;
+        background: none;
+        border: none;
+        outline: none;
+        padding-block: 5px;
+        &::selection {
+            color: white;
+            background-color: $daybreak;
+        }
+    }
+    &.error {
+        border-bottom: 1px solid rgba(255, 0, 0, .4);
+        input {
+            color: rgba(255, 0, 0, .4);
+        }
+    }
+    .input-btn {
+        width: auto;
+        cursor: pointer;
+        &::before {
+            color: rgba(0, 0, 0, .45);
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+        }
+        &.fa-eye::before {
+            content: '\f06e';
+        }
+        &.fa-eye-slash::before {
+            content: '\f070';
+        }
+    }
+}

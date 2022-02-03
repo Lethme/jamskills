@@ -1,0 +1,38 @@
+@import '../../../assets/scss/colors.scss';
+@import '../../../assets/scss/fonts.scss';
+.stats {
+    text-align: left;
+}
+
+.stats .stats-title {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .45);
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.stats .stats-title .marker {
+    position: absolute;
+    transform: translateX(-150%);
+    font-size: 2em;
+}
+
+.stats .stats-value {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    font-family: $roboto;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .85);
+}
+
+.stats .stats-value svg {
+    margin-right: 5px;
+}

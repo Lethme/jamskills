@@ -1,0 +1,54 @@
+@import '../../../assets/scss/colors.scss';
+@import '../../../assets/scss/fonts.scss';
+.test-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: $roboto;
+}
+
+.answer-label {
+    text-transform: uppercase;
+    padding: 1.5em 3.5em;
+    border: 1px solid $neutral6;
+    background: white;
+    cursor: pointer;
+    margin: 40px;
+    transition: all .1s ease;
+}
+
+.answer-title {
+    margin-bottom: 0 !important;
+}
+
+.answer-radio {
+    display: none;
+}
+
+.answer-radio:checked+.answer-label {
+    background: $daybreak;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.answer-radio:checked+.answer-label .answer-title {
+    color: white;
+}
+
+.btn-fluid {
+    width: 100%;
+}
+
+.steps-img {
+    margin-right: 120px;
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.test-container {
+    width: 100%;
+    max-width: 900px;
+}
